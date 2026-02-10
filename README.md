@@ -8,7 +8,7 @@ Later, a bug was found — the Remove button was not being enabled even when a c
 
 You can watch the actual development process in the video below.
 
-[![Watch the video](https://img.youtube.com/vi/9jinoL4bNDs/maxresdefault.jpg)](https://youtu.be/9jinoL4bNDs)
+[![Watch the video](https://img.youtube.com/vi/9jinoL4bNDs/0.jpg)](https://youtu.be/9jinoL4bNDs)
 
 ## Prompt
 
