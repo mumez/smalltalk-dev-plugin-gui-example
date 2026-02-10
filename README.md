@@ -55,6 +55,25 @@ The `TodoList` package contains three classes:
 |:-:|:-:|
 | ![Filtering items by keyword](to-do-list.png) | ![Remove button active when item is checked](to-do-list-fixed.png) |
 
+## Try It in Pharo
+
+To try the generated source code in a live Pharo environment, load the `TodoList` project using Metacello:
+
+```smalltalk
+Metacello new
+  baseline: 'TodoList';
+  repository: 'github://mumez/smalltalk-dev-plugin-gui-example:loader/src';
+  load.
+```
+
+> **Note:** The full project structure (Baseline class and project metadata) was not part of the original generated output — it was added afterward to enable loading via Metacello. The `loader` branch is specified for this purpose.
+
+Then open the TodoList from a Playground:
+
+```smalltalk
+TodoListPresenter open.
+```
+
 ## License
 
 [MIT](LICENSE)
