@@ -2,9 +2,9 @@
 
 This repository showcases a project created by [smalltalk-dev-plugin](https://github.com/mumez/smalltalk-dev-plugin) — a Claude Code extension for Pharo Smalltalk development.
 
-Even interactive GUI programming is possible with this plugin. First, a simple to-do list using the Spec2 framework was requested. After the initial implementation, a filter field was requested as an additional feature, and `/st:buddy` revised the implementation accordingly.
-Since `/st:buddy` can read Pharo screenshots, it understands the to-do list's appearance and behavior directly from the running application.
-Later, a bug was found — the Remove button was not being enabled even when a checked item was selected. The session was resumed for debugging, and `/st:buddy` successfully fixed the issue.
+Even interactive GUI programming is possible with this plugin. First, a simple to-do list using the Spec2 framework was requested. After the initial implementation, a filter field was requested as an additional feature, and `/st-buddy` revised the implementation accordingly.
+Since `/st-buddy` can read Pharo screenshots, it understands the to-do list's appearance and behavior directly from the running application.
+Later, a bug was found — the Remove button was not being enabled even when a checked item was selected. The session was resumed for debugging, and `/st-buddy` successfully fixed the issue.
 
 You can watch the actual development process in the video below.
 
@@ -12,15 +12,15 @@ You can watch the actual development process in the video below.
 
 ## Prompt
 
-The following prompt was given to `/st:buddy`:
+The following prompt was given to `/st-buddy`:
 
 ```
-/st:buddy I want to make a simple to-do list using the Spec2 framework.
+/st-buddy I want to make a simple to-do list using the Spec2 framework.
 Include a checkbox for each item, plus an input field with Add/Remove buttons at the bottom. Only checked items can be removed.
 Start developing.
 ```
 
-After the initial implementation, `/st:buddy` asked:
+After the initial implementation, `/st-buddy` asked:
 ```
 Would you like me to add any additional features, such as persistence, editing items, or keyboard shortcuts?
 ```
@@ -30,14 +30,14 @@ So the following second request was made:
 Add a filter field for filtering items.
 ```
 
-`/st:buddy` revised the implementation and confirmed that the filter field was added by reopening the to-do list window.
+`/st-buddy` revised the implementation and confirmed that the filter field was added by reopening the to-do list window.
 
 At this stage, a bug was discovered: the Remove button was not being enabled when a checked item was selected. The session was resumed with the following debugging request:
 ```
 The remove button is not active even if the checked item is selected.
 ```
 
-`/st:buddy` successfully fixed the bug after a few iterations.
+`/st-buddy` successfully fixed the bug after a few iterations.
 
 ## Generated Source
 
